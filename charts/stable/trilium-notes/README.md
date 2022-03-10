@@ -1,6 +1,6 @@
 # trilium-notes
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 0.50.2](https://img.shields.io/badge/Version-0.50.2-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 trilium-notes helm package
 
@@ -79,14 +79,14 @@ N/A
 | env.TRILIUM_DATA_DIR | string | `"/data"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"zadam/trilium"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.0
+### Version 0.50.2
 
 #### Added
 
