@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: trilium-notes helm package
+name: trilium-notes
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- trilium-notes
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/trilium-notes
+icon: https://trilium-notes.org/icon
+sources:
+- https://github.com/trilium-notes/trilium-notes-docker
+maintainers:
+- name: imtoanle
+  email: toanledev@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
