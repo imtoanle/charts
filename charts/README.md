@@ -145,6 +145,7 @@
 | [traccar](stable/traccar) | Traccar is an open source GPS tracking system. |
 | [traefik-forward-auth](stable/traefik-forward-auth) | A minimal forward authentication service that provides OAuth/SSO login and authentication for the traefik reverse proxy/load balancer |
 | [transmission](stable/transmission) | Transmission is a cross-platform BitTorrent client |
+| [trilium-notes](stable/trilium-notes) | trilium-notes helm package |
 | [truecommand](stable/truecommand) | Central Management of TrueNAS storage systems |
 | [tt-rss](stable/tt-rss) | Tiny Tiny RSS is a free and open source web-based news feed (RSS/Atom) reader and aggregator |
 | [tvheadend](stable/tvheadend) | TVheadend - a TV streaming server and digital video recorder |
