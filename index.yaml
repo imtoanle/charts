@@ -86548,13 +86548,13 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-03-10T14:13:56.327958015Z"
+    created: "2022-03-10T14:41:46.596272275Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.3.0
     description: trilium-notes helm package
-    digest: 62bec6042db2d985b396fca7fdc9e649220f9329605266aa6732b510d1c72d2b
+    digest: 06d56e8c887b87e89f42231189a584bed35d14fff7ccf941e98261cc08065fab
     home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/trilium-notes
     icon: https://trilium-notes.org/icon
     keywords:
@@ -86567,8 +86567,8 @@ entries:
     sources:
     - https://github.com/trilium-notes/trilium-notes-docker
     urls:
-    - https://github.com/imtoanle/charts/releases/download/trilium-notes-1.0.0/trilium-notes-1.0.0.tgz
-    version: 1.0.0
+    - https://github.com/imtoanle/charts/releases/download/trilium-notes-0.50.2/trilium-notes-0.50.2.tgz
+    version: 0.50.2
   truecommand:
   - annotations:
       artifacthub.io/changes: |
@@ -100190,4 +100190,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-03-10T14:13:56.351416528Z"
+generated: "2022-03-10T14:41:46.622046806Z"
