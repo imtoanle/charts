@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: zadam/trilium
   # -- image tag
-  tag: ""
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
