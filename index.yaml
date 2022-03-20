@@ -9745,6 +9745,34 @@ entries:
     urls:
     - https://github.com/billimek/billimek-charts/releases/download/calibre-web-1.1.2/calibre-web-1.1.2.tgz
     version: 1.1.2
+  casper-node-exporter:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-03-20T12:14:24.760601392Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: casper-node-exporter helm package
+    digest: a726eb7610d7b9f9e8052c50fbbeeb47df6efdb1924d01677e555c1970f92c9d
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/casper-node-exporter
+    icon: https://casper-node-exporter.org/icon
+    keywords:
+    - casper-node-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: casper-node-exporter
+    sources:
+    - https://github.com/casper-node-exporter/casper-node-exporter-docker
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/casper-node-exporter-1.0.0/casper-node-exporter-1.0.0.tgz
+    version: 1.0.0
   changedetection-io:
   - annotations:
       artifacthub.io/changes: |
@@ -13573,6 +13601,91 @@ entries:
     - https://github.com/k8s-at-home/charts/releases/download/deluge-1.0.0/deluge-1.0.0.tgz
     version: 1.0.0
   dendrite:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fixed image tag not being followed in polylith deployments
+    apiVersion: v2
+    appVersion: v0.6.3
+    created: "2022-03-11T17:10:47.296403828Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.14.4
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.12.1
+    - alias: clientapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: mediaapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: syncapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: roomserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: eduserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: federationapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: keyserver
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: userapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - alias: appserviceapi
+      condition: dendrite.polylithEnabled
+      name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Dendrite Matrix Homeserver
+    digest: 5dd2fd9847955d99c1fbea1eb5f8b446cfc43c79dcfea19f3c7bec1ec4d4fe17
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dendrite
+    keywords:
+    - dendrite
+    - matrix
+    - homeserver
+    - monolith
+    - federation
+    - polylith
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    name: dendrite
+    sources:
+    - https://github.com/matrix-org/dendrite
+    - https://github.com/matrix-org/dendrite/tree/master/build/docker
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/dendrite-3.0.2/dendrite-3.0.2.tgz
+    version: 3.0.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -40849,6 +40962,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Upgraded app version `v0.5.6`.
+        - kind: changed
+          description: Removed deprecated DB_TYPE environment variable in favour of DB_ENGINE.
+    apiVersion: v2
+    appVersion: v0.5.6
+    created: "2022-03-11T17:12:05.545242883Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.14.4
+    description: Mealie is a self hosted recipe manager and meal planner with a RestAPI
+      backend and a reactive frontend application built in Vue for a pleasant user
+      experience for the whole family.
+    digest: 2ca524f2e8c8f7dc72fc0f961f8619a9eb3ef0443bf3c33509d7f1a822d57884
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mealie
+    icon: https://raw.githubusercontent.com/hay-kot/mealie/gh-pages/assets/img/favicon.png
+    keywords:
+    - grocy
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    name: mealie
+    sources:
+    - https://github.com/hay-kot/mealie
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/mealie-4.0.0/mealie-4.0.0.tgz
+    version: 4.0.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.3.0`.
         - kind: changed
           description: Upgraded `postgresql` chart dependency to version `10.14.4`.
@@ -55777,6 +55925,34 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/organizr-1.0.0/organizr-1.0.0.tgz
     version: 1.0.0
+  otel-collector:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 0.46.0
+    created: "2022-03-14T19:13:43.750158475Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: OpenTelemetry collector helm package
+    digest: 9d6ec3414fb7f018494d89161372d93cd85daf74f8717f670af16fe555dddbc7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/otel-collector
+    icon: https://otel-collector.org/icon
+    keywords:
+    - otel-collector, open telemetry, tracing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mike@terhar.com
+      name: mterhar
+    name: otel-collector
+    sources:
+    - https://github.com/otel-collector/otel-collector-docker
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/otel-collector-1.0.0/otel-collector-1.0.0.tgz
+    version: 1.0.0
   overleaf:
   - annotations:
       artifacthub.io/changes: |
@@ -57099,6 +57275,44 @@ entries:
     - https://github.com/k8s-at-home/charts/releases/download/owncloud-ocis-1.0.0/owncloud-ocis-1.0.0.tgz
     version: 1.0.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgrade to 1.6.0 and set default value for PAPERLESS_PORT to prevent CrashLoopBackoff. See https://github.com/paperless-ngx/paperless-ngx/issues/264.
+    apiVersion: v2
+    appVersion: 1.6.0
+    created: "2022-03-11T10:57:48.237833106Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.14.4
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.10
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 6e2e41cb3860868926ef2922924a9a6aa83a03444a8bab6ca99c0c0c8490d0b7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: mr-onion-2
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    - email: charts@mor.re
+      name: morremeyer
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/paperless-8.5.0/paperless-8.5.0.tgz
+    version: 8.5.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -75538,6 +75752,36 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/shlink-1.0.0/shlink-1.0.0.tgz
     version: 1.0.0
+  signal-cli-rest-api:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: "0.57"
+    created: "2022-03-11T13:13:05.09985939Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Dockerized Signal Messenger REST API
+    digest: 8c265109de4630ba4315694aea6ddaf59dab08ad9255d5f12488b46871be9314
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/signal-cli-rest-api
+    icon: https://signal-cli-rest-api.org/icon
+    keywords:
+    - signal-cli-rest-api
+    - signal-messenger
+    - signal
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: vargat
+      url: https://github.com/tamasv
+    name: signal-cli-rest-api
+    sources:
+    - https://github.com/bbernhard/signal-cli-rest-api
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/signal-cli-rest-api-1.0.0/signal-cli-rest-api-1.0.0.tgz
+    version: 1.0.0
   sinusbot:
   - annotations:
       artifacthub.io/changes: |
@@ -86541,34 +86785,6 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/transmission-1.0.0/transmission-1.0.0.tgz
     version: 1.0.0
-  trilium-notes:
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: added
-          description: Initial version
-    apiVersion: v2
-    appVersion: 1.0.0
-    created: "2022-03-10T14:41:46.596272275Z"
-    dependencies:
-    - name: common
-      repository: https://library-charts.k8s-at-home.com
-      version: 4.3.0
-    description: trilium-notes helm package
-    digest: 06d56e8c887b87e89f42231189a584bed35d14fff7ccf941e98261cc08065fab
-    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/trilium-notes
-    icon: https://trilium-notes.org/icon
-    keywords:
-    - trilium-notes
-    kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - email: toanledev@gmail.com
-      name: imtoanle
-    name: trilium-notes
-    sources:
-    - https://github.com/trilium-notes/trilium-notes-docker
-    urls:
-    - https://github.com/imtoanle/charts/releases/download/trilium-notes-0.50.2/trilium-notes-0.50.2.tgz
-    version: 0.50.2
   truecommand:
   - annotations:
       artifacthub.io/changes: |
@@ -94466,6 +94682,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Removed the forced env {} so they can be populated elsewhere (envFrom secrets for example)
+    apiVersion: v2
+    appVersion: version-2.5.201
+    created: "2022-03-19T11:16:27.993486855Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Make documentation a joy to write using Wiki.js's beautiful and intuitive
+      interface!
+    digest: 63c3815e125b0ec65b04649d5b404afc9d2334647dccf5a538fd1ddbd36ded7f
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/wikijs
+    icon: https://static.requarks.io/logo/wikijs-butterfly.svg
+    keywords:
+    - wiki
+    - wikijs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: rolf@berkenbosch.nl
+      name: rolfberkenbosch
+    name: wikijs
+    sources:
+    - https://hub.docker.com/r/linuxserver/wikijs/
+    - https://github.com/Requarks/wiki
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/wikijs-6.2.1/wikijs-6.2.1.tgz
+    version: 6.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.3.0`.
     apiVersion: v2
     appVersion: version-2.5.201
@@ -100190,4 +100436,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-03-10T14:41:46.622046806Z"
+generated: "2022-03-20T12:14:24.78474185Z"
