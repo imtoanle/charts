@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ktoanlba/casper-node-exporter
   # -- image tag
-  tag: 1.0.0
+  tag: latest
   # -- image pull policy
   pullPolicy: IfNotPresent
 
