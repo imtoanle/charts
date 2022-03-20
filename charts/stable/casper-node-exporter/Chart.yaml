@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: casper-node-exporter helm package
+name: casper-node-exporter
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- casper-node-exporter
+home: https://github.com/imtoanle/charts/tree/master/charts/stable/casper-node-exporter
+icon: https://casper-node-exporter.org/icon
+sources:
+- https://github.com/casper-node-exporter/casper-node-exporter-docker
+maintainers:
+- name: imtoanle
+  email: toanledev@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
