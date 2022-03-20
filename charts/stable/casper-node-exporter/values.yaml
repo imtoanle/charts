@@ -40,7 +40,12 @@ persistence: {}
   #   enabled: false
   #   mountPath: /data
 
-podAnnotations:
-  prometheus.io/scrape: "true"
-  prometheus.io/path: /metrics
-  prometheus.io/port: "8111"
+metrics:
+  # -- Enable and configure a Prometheus serviceMonitor for the chart under this key.
+  # @default -- See values.yaml
+  enabled: false
+  serviceMonitor:
+    # -- The interval field must use minutes for the padding to calculate properly.
+    interval: 1m
+    scrapeTimeout: 1m
+    labels: {}
