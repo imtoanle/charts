@@ -25,3 +25,5 @@ annotations:
       description: Add service monitor
     - kind: changed
       description: Update service monitor
+    - kind: changed
+      description: Update service monitor 1
