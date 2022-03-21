@@ -9752,15 +9752,17 @@ entries:
           description: Initial version
         - kind: changed
           description: Add service monitor
+        - kind: changed
+          description: Update service monitor
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-03-20T14:50:54.245998001Z"
+    created: "2022-03-21T03:58:59.299970228Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.3.0
     description: casper-node-exporter helm package
-    digest: 8c1adfbe645e344664ae85a86817956a59787359b1e424721720975de86732ca
+    digest: 5e6fae276883bfc9c28ea9ae570985430f4ac0f6c7dcf470991cd533cc3c14b1
     home: https://github.com/imtoanle/charts/tree/master/charts/stable/casper-node-exporter
     icon: https://casper-node-exporter.org/icon
     keywords:
@@ -9773,8 +9775,8 @@ entries:
     sources:
     - https://github.com/casper-node-exporter/casper-node-exporter-docker
     urls:
-    - https://github.com/imtoanle/charts/releases/download/casper-node-exporter-1.0.1/casper-node-exporter-1.0.1.tgz
-    version: 1.0.1
+    - https://github.com/imtoanle/charts/releases/download/casper-node-exporter-1.0.2/casper-node-exporter-1.0.2.tgz
+    version: 1.0.2
   changedetection-io:
   - annotations:
       artifacthub.io/changes: |
@@ -31935,6 +31937,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
+          description: Update image to 0.9.0 (InfluxDB v2 clients support), use differnt port for UDP.
+    apiVersion: v2
+    appVersion: v0.9.0
+    created: "2022-03-20T21:24:28.161687734Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: An exporter for metrics in the InfluxDB format, transforms them and
+      exposes them for consumption by Prometheus.
+    digest: 5da9d267b8211a92e24e7d99d736e7adb1e345a665b23ef5e70d241abbafa237
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/influxdb-exporter
+    icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
+    keywords:
+    - influxdb-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: influxdb-exporter
+    sources:
+    - https://github.com/prometheus/influxdb_exporter
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/influxdb-exporter-1.0.2/influxdb-exporter-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
           description: Add the description and custom configuration to the README.md
     apiVersion: v2
     appVersion: 0.8.1
@@ -42649,6 +42679,39 @@ entries:
     - https://github.com/billimek/billimek-charts/releases/download/modem-stats-2.0.0/modem-stats-2.0.0.tgz
     version: 2.0.0
   monica:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Removed the forced env {} so they can be populated elsewhere (envFrom secrets for example)
+    apiVersion: v2
+    appVersion: 3.7.0-apache
+    created: "2022-03-20T21:23:22.305812112Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.2.0
+    description: A Personal Relationship Management tool to help you organize your
+      social life
+    digest: 5b77daa7349fc3b7baf4c1b3e39ab2a0931f46f132cd679ccdfe72006df012cd
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/monica
+    icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
+    keywords:
+    - crm
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    - https://hub.docker.com/_/monica
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/monica-7.0.2/monica-7.0.2.tgz
+    version: 7.0.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -100438,4 +100501,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-03-20T14:50:54.263260538Z"
+generated: "2022-03-21T03:58:59.322096272Z"
