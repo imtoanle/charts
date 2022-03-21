@@ -1,6 +1,6 @@
 # casper-node-exporter
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 casper-node-exporter helm package
 
@@ -79,17 +79,15 @@ N/A
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ktoanlba/casper-node-exporter"` | image repository |
 | image.tag | string | `"latest"` | image tag |
-| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| metrics.enabled | bool | See values.yaml | Enable and configure a Prometheus serviceMonitor for the chart under this key. |
-| metrics.serviceMonitor.interval | string | `"1m"` | The interval field must use minutes for the padding to calculate properly. |
+| metrics.enabled | bool | See values.yaml | Enable and configure prometheus-qbittorrent-exporter sidecar and Prometheus podMonitor. |
+| metrics.serviceMonitor.interval | string | `"15s"` |  |
 | metrics.serviceMonitor.labels | object | `{}` |  |
-| metrics.serviceMonitor.scrapeTimeout | string | `"1m"` |  |
-| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| metrics.serviceMonitor.scrapeTimeout | string | `"5s"` |  |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.2
 
 #### Added
 
@@ -98,6 +96,7 @@ N/A
 #### Changed
 
 * Add service monitor
+* Update service monitor
 
 #### Fixed
 
