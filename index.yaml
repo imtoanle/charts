@@ -9754,15 +9754,17 @@ entries:
           description: Add service monitor
         - kind: changed
           description: Update service monitor
+        - kind: changed
+          description: Update service monitor 1
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-03-21T03:58:59.299970228Z"
+    created: "2022-03-21T07:36:08.262336464Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.3.0
     description: casper-node-exporter helm package
-    digest: 5e6fae276883bfc9c28ea9ae570985430f4ac0f6c7dcf470991cd533cc3c14b1
+    digest: 66f688d01baef3ab5aabf298da9b47b46aef58c3a2ab6d70c71f4f63c4d2b754
     home: https://github.com/imtoanle/charts/tree/master/charts/stable/casper-node-exporter
     icon: https://casper-node-exporter.org/icon
     keywords:
@@ -9775,8 +9777,8 @@ entries:
     sources:
     - https://github.com/casper-node-exporter/casper-node-exporter-docker
     urls:
-    - https://github.com/imtoanle/charts/releases/download/casper-node-exporter-1.0.2/casper-node-exporter-1.0.2.tgz
-    version: 1.0.2
+    - https://github.com/imtoanle/charts/releases/download/casper-node-exporter-1.0.3/casper-node-exporter-1.0.3.tgz
+    version: 1.0.3
   changedetection-io:
   - annotations:
       artifacthub.io/changes: |
@@ -100501,4 +100503,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-03-21T03:58:59.322096272Z"
+generated: "2022-03-21T07:36:08.285514803Z"
