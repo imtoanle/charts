@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: trilium-notes helm package
 name: trilium-notes
-version: 0.50.2
+version: 1.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
 - trilium-notes
@@ -21,3 +21,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: added
       description: Initial version
+    - kind: changed
+      description: Upgraded `zadam/trilium` image to version `0.50.3`.
