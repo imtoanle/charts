@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: casper-node-exporter helm package
 name: casper-node-exporter
-version: 1.0.3
+version: 1.0.4
 kubeVersion: ">=1.16.0-0"
 keywords:
 - casper-node-exporter
@@ -19,11 +19,6 @@ dependencies:
   version: 4.3.0
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
     - kind: changed
-      description: Add service monitor
-    - kind: changed
-      description: Update service monitor
-    - kind: changed
-      description: Update service monitor 1
+      description: Bump version 1.0.4
+    
