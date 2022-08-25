@@ -1,6 +1,6 @@
 # vaultwarden
 
-![Version: 4.0.1](https://img.shields.io/badge/Version-4.0.1-informational?style=flat-square) ![AppVersion: 1.24.0](https://img.shields.io/badge/AppVersion-1.24.0-informational?style=flat-square)
+![Version: 5.3.2](https://img.shields.io/badge/Version-5.3.2-informational?style=flat-square) ![AppVersion: 1.25.2](https://img.shields.io/badge/AppVersion-1.25.2-informational?style=flat-square)
 
 Vaultwarden is a Bitwarden compatable server in Rust
 
@@ -18,9 +18,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 10.2.0 |
-| https://charts.bitnami.com/bitnami | postgresql | 10.14.4 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -89,7 +89,7 @@ persistence:
 | env.DATA_FOLDER | string | `"config"` | Config dir |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"vaultwarden/server"` | image repository |
-| image.tag | string | `"1.24.0"` | image tag |
+| image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | mariadb.enabled | bool | `false` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -99,7 +99,7 @@ persistence:
 
 ## Changelog
 
-### Version 4.0.1
+### Version 5.3.2
 
 #### Added
 
@@ -107,7 +107,7 @@ N/A
 
 #### Changed
 
-* Upgraded app to version `1.24.0` from `1.22.2`.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

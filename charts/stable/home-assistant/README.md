@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 12.1.0](https://img.shields.io/badge/Version-12.1.0-informational?style=flat-square) ![AppVersion: 2022.3.2](https://img.shields.io/badge/AppVersion-2022.3.2-informational?style=flat-square)
+![Version: 13.4.2](https://img.shields.io/badge/Version-13.4.2-informational?style=flat-square) ![AppVersion: 2022.5.4](https://img.shields.io/badge/AppVersion-2022.5.4-informational?style=flat-square)
 
 Home Assistant
 
@@ -20,10 +20,10 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 1.1.9 |
-| https://charts.bitnami.com/bitnami | mariadb | 10.2.0 |
-| https://charts.bitnami.com/bitnami | postgresql | 10.14.4 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://charts.bitnami.com/bitnami | influxdb | 5.3.5 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -76,7 +76,7 @@ helm install home-assistant k8s-at-home/home-assistant -f values.yaml
 
 When configuring Home Assistant behind a reverse proxy make sure you configure the [http](https://www.home-assistant.io/integrations/http) component and set `trusted_proxies` correctly and `use_x_forwarded_for` to `true`.
 
-For example:
+For example (by edit the configuration.yaml hosted in your pod):
 
 ```yaml
 http:
@@ -152,6 +152,7 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| addons.codeserver | object | See values.yaml | Enable and configure codeserver for the chart.    This allows for easy access to configuration.yaml |
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
@@ -175,7 +176,7 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 ## Changelog
 
-### Version 12.1.0
+### Version 13.4.2
 
 #### Added
 
@@ -183,8 +184,7 @@ N/A
 
 #### Changed
 
-* Easier maintainability by having to change appversion in one place.
-* Upgraded `appVersion` to version `2022.3.2`.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

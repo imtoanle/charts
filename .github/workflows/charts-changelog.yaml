@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -44,27 +44,22 @@ jobs:
       commitHash: ${{ steps.save-commit-hash.outputs.commit_hash }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install Kubernetes tools
-        if: inputs.isRenovatePR == 'true'
-        uses: yokawasa/action-setup-kube-tools@v0.8.0
+        uses: actions/checkout@v3
         with:
-          setup-tools: |
-            yq
-          yq: "4.16.2"
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
 
       - name: Annotate Charts.yaml for Renovate PR's
         if: inputs.isRenovatePR == 'true'
+        env:
+          CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
-          export DEFAULT_BRANCH=$(git remote show origin | awk '/HEAD branch/ {print $NF}')
-          CHARTS=(${{ inputs.modifiedCharts }})
-          for i in "${CHARTS[@]}"
-          do
-              IFS='/' read -r -a chart_parts <<< "$i"
-                ./.github/scripts/renovate-releasenotes.sh "charts/${chart_parts[0]}/${chart_parts[1]}"
-              echo ""
-          done
+          pip install -r ./.github/scripts/requirements.txt
+          ./.github/scripts/renovate-releasenotes.py --check-branch "$CHECK_BRANCH" ${{ inputs.modifiedCharts }}
 
       - name: Create commit
         id: create-commit
@@ -72,7 +67,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: charts/**/
-          commit_message: "chore: Auto-update chart metadata [skip ci]"
+          commit_message: "chore: Auto-update chart metadata"
           commit_user_name: ${{ github.actor }}
           commit_user_email: ${{ github.actor }}@users.noreply.github.com
 

@@ -12,6 +12,7 @@
 | [appdaemon](stable/appdaemon) | AppDaemon is a loosely coupled, multi-threaded, sandboxed python execution environment for writing automation apps for various types of Home Automation Software including Home Assistant and MQTT. |
 | [aria2](stable/aria2) | aria server for downloading web content |
 | [audiobookshelf](stable/audiobookshelf) | Self-hosted audiobook server for managing and playing your audiobooks |
+| [autobrr](stable/autobrr) | Autobrr monitors IRC announce channels to get releases as soon as they are available with good filtering |
 | [baikal](stable/baikal) | Baïkal is a lightweight CalDAV+CardDAV server. It offers a web interface with management of users, address books and calendars. |
 | [bazarr](stable/bazarr) | Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements |
 | [beets](stable/beets) | beets helm package |
@@ -24,6 +25,7 @@
 | [comcast](stable/comcast) | periodic comcast data usage checks and save the results to InfluxDB |
 | [cryptofolio](stable/cryptofolio) | Track your cryptocurrency holdings/portfolio |
 | [deconz](stable/deconz) | deCONZ is an easy to use control software, with which you can set up and control Zigbee networks of any size without further programming effort. |
+| [deemix](stable/deemix) | Deemix is a Deezer Download Manager |
 | [deepstack](stable/deepstack) | An AI API engine that serves pre-built models and custom models on multiple edge devices locally or on your private cloud |
 | [deluge](stable/deluge) | Deluge is a torrent download client |
 | [dizquetv](stable/dizquetv) | Create live TV channel streams from media on your Plex servers. |
@@ -36,7 +38,9 @@
 | [error-pages](stable/error-pages) | Server error pages in the docker image |
 | [esphome](stable/esphome) | ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems. |
 | [facebox](stable/facebox) | Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image. |
+| [factorio](stable/factorio) | Factorio dedicated steam game server |
 | [filebrowser](stable/filebrowser) | filebrowser provides a file managing interface within a specified directory |
+| [firefly-iii](stable/firefly-iii) | Firefly III: a personal finances manager |
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
 | [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
 | [focalboard](stable/focalboard) | Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana. |
@@ -45,9 +49,11 @@
 | [frigate](stable/frigate) | NVR With Realtime Object Detection for IP Cameras |
 | [games-on-whales](stable/games-on-whales) | Streams graphic applications/games (retroarch, firefox, steam) runing on Kubernetes |
 | [gaps](stable/gaps) | Gaps searches through your Plex Server or local folders for all movies, then queries for known movies in the same collection. |
+| [gatus](stable/gatus) | A developer-oriented health dashboard that gives you the ability to monitor your services using HTTP, ICMP, TCP, and even DNS queries. |
 | [ghost](stable/ghost) | Ghost is a blogging and publishing software |
 | [gollum](stable/gollum) | Gollum is a simple wiki system built on top of Git |
 | [gonic](stable/gonic) | Music streaming server / subsonic server API implementation |
+| [gotify](stable/gotify) | A simple server for sending and receiving messages |
 | [grocy](stable/grocy) | ERP beyond your fridge - grocy is a web-based self-hosted groceries & household management solution for your home |
 | [haste-server](stable/haste-server) | Simple text sharing |
 | [healthchecks](stable/healthchecks) | Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages ("pings") from your cron jobs and scheduled tasks ("checks"). When a ping does not arrive on time, Healthchecks sends out alerts. |
@@ -58,14 +64,15 @@
 | [hyperion-ng](stable/hyperion-ng) | Hyperion is an opensource Bias or Ambient Lighting implementation |
 | [icantbelieveitsnotvaletudo](stable/icantbelieveitsnotvaletudo) | Create live map data from Valetudo powered robots |
 | [icinga2](stable/icinga2) | A monitoring system which checks the availability of your network resources, notifies users of outages, and generates performance data for reporting. |
+| [ihatemoney](stable/ihatemoney) | A web application made to ease shared budget management |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [intel-gpu-plugin](stable/intel-gpu-plugin) | The Intel GPU plugin facilitates offloading the processing of computation intensive workloads to GPU hardware |
 | [jackett](stable/jackett) | API Support for your favorite torrent trackers |
 | [jellyfin](stable/jellyfin) | Jellyfin is a Free Software Media System |
-| [jetbrains-projector](stable/jetbrains-projector) | Projector is a technology to run and access JetBrains IDEs remotely |
 | [joplin-server](stable/joplin-server) | This server allows you to sync any Joplin client |
 | [kanboard](stable/kanboard) | Kanboard is a free and open source Kanban project management software. |
 | [komga](stable/komga) | A comics/mangas server to serve/stream pages via API |
+| [kube-ops-view](stable/kube-ops-view) | A read-only system dashboard for multiple K8s clusters |
 | [lazylibrarian](stable/lazylibrarian) | A Helm chart for deploying LazyLibrarian |
 | [leaf2mqtt](stable/leaf2mqtt) | Nissan Leaf connected services to MQTT adapter |
 | [librespeed](stable/librespeed) | Librespeed is a HTML5 webpage to test upload and download speeds |
@@ -80,12 +87,16 @@
 | [modem-stats](stable/modem-stats) | periodic cable modem data collection and save the results to InfluxDB |
 | [monica](stable/monica) | A Personal Relationship Management tool to help you organize your social life |
 | [mosquitto](stable/mosquitto) | Eclipse Mosquitto - An open source MQTT broker |
+| [mqtt-exporter](stable/mqtt-exporter) | Simple and generic Prometheus exporter for MQTT. Tested with Mosquitto MQTT and Xiaomi sensors. |
 | [multus](stable/multus) | multus CNI allows multiple NICs per pod |
 | [mylar](stable/mylar) | Mylar is the automated Comic Book downloader (cbr/cbz) for use with various download clients. |
 | [navidrome](stable/navidrome) | Navidrome is an open source web-based music collection server and streamer |
 | [neolink](stable/neolink) | Neolink - RTSP bridge to Reolink IP cameras |
 | [network-ups-tools](stable/network-ups-tools) | Network UPS Tools is a collection of programs which provide a common interface for monitoring and administering UPS, PDU and SCD hardware. |
+| [nginx-php](stable/nginx-php) | Nginx and PHP FPM for running PHP applications |
+| [nightscout](stable/nightscout) | nightscout helm package |
 | [node-red](stable/node-red) | Node-RED is low-code programming for event-driven applications |
+| [ntfy](stable/ntfy) | Send push notifications to your phone or desktop using PUT/POST |
 | [nullserv](stable/nullserv) | A simple null file http and https server |
 | [nzbget](stable/nzbget) | NZBGet is a Usenet downloader client |
 | [nzbhydra2](stable/nzbhydra2) | Usenet meta search |
@@ -96,17 +107,16 @@
 | [openemr](stable/openemr) | OpenEMR is the most popular open source electronic health records and medical practice management solution. |
 | [openkm](stable/openkm) | OpenKM integrates all essential documents management, collaboration and an advanced search functionality into one easy to use solution. |
 | [organizr](stable/organizr) | HTPC/Homelab Services Organizer |
+| [otel-collector](stable/otel-collector) | OpenTelemetry collector helm package |
 | [overleaf](stable/overleaf) | A web-based collaborative LaTeX editor |
 | [overseerr](stable/overseerr) | Overseerr is a free and open source software application for managing requests for your media library. It integrates with your existing services such as Sonarr, Radarr and Plex! |
 | [owncast](stable/owncast) | Take control over your live stream video by running it yourself. Streaming + chat out of the box. |
 | [owncloud-ocis](stable/owncloud-ocis) | ownCloud Infinite Scale is a self-hosted file sync and share server. |
 | [paperless](stable/paperless) | Paperless - Index and archive all of your scanned paper documents |
 | [photoprism](stable/photoprism) | PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection |
-| [piaware](stable/piaware) | Program for forwarding ADS-B data to FlightAware |
 | [plex](stable/plex) | Plex Media Server |
 | [pod-gateway](stable/pod-gateway) | Admision controller to change the default gateway and DNS server of PODs |
 | [powerdns-admin](stable/powerdns-admin) | A PowerDNS web interface with advanced features |
-| [powerdns](stable/powerdns) | PowerDNS is a DNS server, written in C++ and licensed under the GPL. It runs on most Unix derivatives. PowerDNS features a large number of different backends ranging from simple BIND style zonefiles to relational databases and load balancing/failover algorithms. A DNS recursor is provided as a separate program. |
 | [pretend-youre-xyzzy](stable/pretend-youre-xyzzy) | pretend-youre-xyzzy, a cards against humanity clone |
 | [privatebin](stable/privatebin) | A minimalist, open source online pastebin running on an Nginx, php-fpm & Alpine Linux stack |
 | [promcord](stable/promcord) | Discord bot that provides metrics from a Discord server |
@@ -120,17 +130,21 @@
 | [radicale](stable/radicale) | A simple CalDAV (calendar) and CardDAV (contact) server. |
 | [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
 | [recipes](stable/recipes) | Recipes is a Django application to manage, tag and search recipes using either built in models or external storage providers hosting PDF's, Images or other files. |
-| [reg](stable/reg) | Docker registry v2 command line client and repo listing generator with security checks. |
 | [resilio-sync](stable/resilio-sync) | Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology |
 | [reverse-proxy](stable/reverse-proxy) | Creates ingress reverse-proxies for external hosts with minimum boilerplate |
+| [rhasspy](stable/rhasspy) | rhasspy helm package |
 | [rtorrent-flood](stable/rtorrent-flood) | rTorrent is a stable, high-performance and low resource consumption BitTorrent client. |
+| [rtorrent-rutorrent](stable/rtorrent-rutorrent) | ruTorrent is a popular rtorrent client with a webui for ease of use. |
 | [rtsp-to-web](stable/rtsp-to-web) | RTSPtoWeb converts RTSP streams to WebRTC, LL-HLS, HLS, MSE |
 | [sabnzbd](stable/sabnzbd) | Free and easy binary newsreader |
 | [samba](stable/samba) | A simple in-cluster Samba server |
+| [satisfactory](stable/satisfactory) | Satisfactory dedicated server |
 | [seafile](stable/seafile) | seafile helm package |
 | [searx](stable/searx) | Searx is a privacy-respecting, hackable metasearch engine |
+| [send](stable/send) | Simple, private file sharing. |
 | [ser2sock](stable/ser2sock) | Serial to Socket Redirector |
 | [sharry](stable/sharry) | Sharry allows to share files with others in a simple way. It is a self-hosted web application. The basic concept is to upload files and get a url back that can then be shared. |
+| [shinobi](stable/shinobi) | shinobi helm package |
 | [shlink](stable/shlink) | A self-hosted and PHP-based URL shortener application with CLI and REST interfaces |
 | [smarter-device-manager](stable/smarter-device-manager) | Manage hardware resource allocation without a need for privileged containers |
 | [sonarr](stable/sonarr) | Smart PVR for newsgroup and bittorrent users |
@@ -138,12 +152,13 @@
 | [stash](stable/stash) | An organizer for your porn, written in Go |
 | [statping](stable/statping) | Status page for monitoring your websites and applications |
 | [syncthing](stable/syncthing) | Open Source Continuous File Synchronization |
+| [syslog-ng](stable/syslog-ng) | syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs. |
 | [tautulli](stable/tautulli) | A Python based monitoring and tracking tool for Plex Media Server |
 | [tdarr](stable/tdarr) | Tdarr is a self hosted web-app for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers etc. |
 | [teedy](stable/teedy) | Teedy is an open source, lightweight document management system for individuals and businesses. |
 | [teslamate](stable/teslamate) | A self-hosted data logger for your Tesla 🚘 |
 | [thelounge](stable/thelounge) | The Lounge, modern web IRC client designed for self-hosting |
-| [traccar](stable/traccar) | Traccar is an open source GPS tracking system. |
+| [theme-park](stable/theme-park) | theme-park helm package |
 | [traefik-forward-auth](stable/traefik-forward-auth) | A minimal forward authentication service that provides OAuth/SSO login and authentication for the traefik reverse proxy/load balancer |
 | [transmission](stable/transmission) | Transmission is a cross-platform BitTorrent client |
 | [trilium-notes](stable/trilium-notes) | trilium-notes helm package |
@@ -175,13 +190,20 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
+| [babybuddy](incubator/babybuddy) | A buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work. |
 | [changedetection-io](incubator/changedetection-io) | changedetection-io helm package |
 | [cryptpad](incubator/cryptpad) | cryptpad helm package |
 | [dendrite](incubator/dendrite) | Dendrite Matrix Homeserver |
+| [handbrake](incubator/handbrake) | handbrake helm package |
+| [kah-common-chart](incubator/kah-common-chart) | A KaH-common powered chart template. This can be useful for small projects that don't have their own chart. |
 | [lancache](incubator/lancache) | LanCache Monolithic - a caching proxy server for game download content |
+| [mopidy](incubator/mopidy) | mopidy helm package |
 | [openhab](incubator/openhab) | openhab helm package |
 | [scrypted](incubator/scrypted) | scrypted helm package |
+| [sdtd](incubator/sdtd) | Dedicated server for 7 Days to Die |
+| [signal-cli-rest-api](incubator/signal-cli-rest-api) | Dockerized Signal Messenger REST API |
 | [sinusbot](incubator/sinusbot) | TeamSpeak & Discord Bot |
+| [snapcast](incubator/snapcast) | snapcast helm package |
 | [strongswan](incubator/strongswan) | strongSwan – the OpenSource IPsec-based VPN Solution |
 | [teamspeak](incubator/teamspeak) | TeamSpeak Server |
 | [torrserver](incubator/torrserver) | TorrServer streams torrent to http |

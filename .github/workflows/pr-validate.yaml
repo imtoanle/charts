@@ -4,10 +4,16 @@ on:
   pull_request:
     branches:
       - master
+    types:
+      - opened
+      - edited
+      - reopened
+      - ready_for_review
+      - synchronize
 
 concurrency:
   group: ${{ github.head_ref }}-pr-validate
-  # cancel-in-progress: true
+  cancel-in-progress: true
 
 jobs:
   pr-metadata:
@@ -36,12 +42,13 @@ jobs:
       - charts-changelog
     with:
       checkoutCommit: ${{ needs.charts-changelog.outputs.commitHash }}
+      chartChangesDetected: ${{ needs.pr-metadata.outputs.addedOrModified }}
 
   charts-test:
     uses: k8s-at-home/charts/.github/workflows/charts-test.yaml@master
     needs:
       - pr-metadata
       - charts-changelog
-      - charts-lint
     with:
       checkoutCommit: ${{ needs.charts-changelog.outputs.commitHash }}
+      chartChangesDetected: ${{ needs.pr-metadata.outputs.addedOrModified }}

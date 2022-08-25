@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 8.4.0](https://img.shields.io/badge/Version-8.4.0-informational?style=flat-square) ![AppVersion: 1.5.0](https://img.shields.io/badge/AppVersion-1.5.0-informational?style=flat-square)
+![Version: 9.1.3](https://img.shields.io/badge/Version-9.1.3-informational?style=flat-square) ![AppVersion: 1.8.0](https://img.shields.io/badge/AppVersion-1.8.0-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -18,9 +18,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 10.14.4 |
-| https://charts.bitnami.com/bitnami | redis | 15.6.10 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://charts.bitnami.com/bitnami | redis | 16.13.1 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -80,6 +80,7 @@ N/A
 | env.COMPOSE_PROJECT_NAME | string | `"paperless"` | Project name |
 | env.PAPERLESS_DBHOST | string | `nil` | Database host to use |
 | env.PAPERLESS_OCR_LANGUAGE | string | `"eng"` | OCR languages to install |
+| env.PAPERLESS_PORT | int | `8000` | Port to use |
 | env.PAPERLESS_REDIS | string | `nil` | Redis to use |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` | image repository |
@@ -95,7 +96,7 @@ N/A
 
 ## Changelog
 
-### Version 8.4.0
+### Version 9.1.3
 
 #### Added
 
@@ -103,7 +104,7 @@ N/A
 
 #### Changed
 
-* Changed image and source links to the community fork paperless-ngx. See https://github.com/jonaswinkler/paperless-ng/issues/1599 and https://github.com/jonaswinkler/paperless-ng/issues/1632.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 
