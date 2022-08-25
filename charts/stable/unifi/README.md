@@ -1,6 +1,6 @@
 # unifi
 
-![Version: 4.6.1](https://img.shields.io/badge/Version-4.6.1-informational?style=flat-square) ![AppVersion: v6.5.55](https://img.shields.io/badge/AppVersion-v6.5.55-informational?style=flat-square)
+![Version: 5.1.2](https://img.shields.io/badge/Version-5.1.2-informational?style=flat-square) ![AppVersion: v7.1.68](https://img.shields.io/badge/AppVersion-v7.1.68-informational?style=flat-square)
 
 Ubiquiti Network's Unifi Controller
 
@@ -16,8 +16,8 @@ Ubiquiti Network's Unifi Controller
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mongodb | 10.30.12 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://charts.bitnami.com/bitnami | mongodb | 12.1.22 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -128,11 +128,12 @@ service:
 | env.UNIFI_UID | string | `"999"` | Specify the user ID the application will run as |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"jacobalberty/unifi"` | image repository |
-| image.tag | string | `"v6.5.55"` | image tag |
+| image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | ingress.portal | object | See values.yaml | Enable and configure settings for the captive portal ingress under this key. |
 | mongodb | object | See values.yaml | Enable and configure mongodb database subchart under this key.    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb) |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| podSecurityContext | object | See below | pod security context. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 | service.main.ports.controller | object | See values.yaml | Configure Controller port used for device command/control |
 | service.main.ports.discovery | object | See values.yaml | Configure device discovery port |
@@ -145,7 +146,7 @@ service:
 
 ## Changelog
 
-### Version 4.6.1
+### Version 5.1.2
 
 #### Added
 
@@ -153,7 +154,7 @@ N/A
 
 #### Changed
 
-* Upgraded `jacobalberty/unifi` image to version `v6.5.55`.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

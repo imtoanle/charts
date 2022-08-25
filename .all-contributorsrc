@@ -526,6 +526,87 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "johanneskastl",
+      "name": "Johannes Kastl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26167225?v=4",
+      "profile": "https://www.b1-systems.de",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "funkypenguin",
+      "name": "David Young",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1524686?v=4",
+      "profile": "https://www.funkypenguin.co.nz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bikram990",
+      "name": "Bikramjeet Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6782131?v=4",
+      "profile": "https://github.com/bikram990",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "geraldwuhoo",
+      "name": "Gerald Wu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22160945?v=4",
+      "profile": "http://geraldwu.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ntrp",
+      "name": "Ivan Gregurić Ortolan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/720492?v=4",
+      "profile": "http://ntrpigo.blogspot.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lucacalcaterra",
+      "name": "Luca Calcaterra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/879825?v=4",
+      "profile": "https://github.com/lucacalcaterra",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Omar007",
+      "name": "Omar Pakker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5380079?v=4",
+      "profile": "https://github.com/Omar007",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "frezbo",
+      "name": "Noel Georgi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18496730?v=4",
+      "profile": "https://resume.frezbo.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lanquarden",
+      "name": "lanquarden",
+      "avatar_url": "https://avatars.githubusercontent.com/u/446743?v=4",
+      "profile": "https://github.com/lanquarden",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

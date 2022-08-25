@@ -1,6 +1,6 @@
 # onedrive
 
-![Version: 2.2.0](https://img.shields.io/badge/Version-2.2.0-informational?style=flat-square) ![AppVersion: v2.4.14](https://img.shields.io/badge/AppVersion-v2.4.14-informational?style=flat-square)
+![Version: 2.4.3](https://img.shields.io/badge/Version-2.4.3-informational?style=flat-square) ![AppVersion: 2.4.20](https://img.shields.io/badge/AppVersion-2.4.20-informational?style=flat-square)
 
 A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -88,8 +88,8 @@ In order to generate an authentication response value you must do the following:
 | env.ONEDRIVE_UID | int | `1000` | Set the OneDrive User ID |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/wrmilling/onedrive-docker"` | image repository |
-| image.tag | string | `"v2.0.5"` | image tag |
+| image.repository | string | `"driveone/onedrive"` | image repository |
+| image.tag | string | `nil` | image tag |
 | persistence | object | See values.yaml for full listing | Configure persistence settings for the chart under this key. |
 | persistence.config | object | `{"accessMode":"ReadWriteOnce","enabled":true,"mountPath":"/onedrive/conf"}` | OneDrive config storage |
 | persistence.config.enabled | bool | `true` | If config storage should be enabled |
@@ -98,7 +98,7 @@ In order to generate an authentication response value you must do the following:
 
 ## Changelog
 
-### Version 2.2.0
+### Version 2.4.3
 
 #### Added
 
@@ -106,7 +106,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.3.0`.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

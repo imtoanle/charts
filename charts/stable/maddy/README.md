@@ -1,6 +1,6 @@
 # maddy
 
-![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-informational?style=flat-square) ![AppVersion: v0.5.2](https://img.shields.io/badge/AppVersion-v0.5.2-informational?style=flat-square)
+![Version: 3.1.2](https://img.shields.io/badge/Version-3.1.2-informational?style=flat-square) ![AppVersion: v0.5.2](https://img.shields.io/badge/AppVersion-v0.5.2-informational?style=flat-square)
 
 Maddy Mail Server
 
@@ -18,8 +18,8 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 10.14.4 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -117,7 +117,7 @@ about how to do this.
 
 ## Changelog
 
-### Version 2.0.0
+### Version 3.1.2
 
 #### Added
 
@@ -125,7 +125,7 @@ N/A
 
 #### Changed
 
-* **Breaking**: `alias` content moved from `maddy.alias` to `maddy.config_files.alias`
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

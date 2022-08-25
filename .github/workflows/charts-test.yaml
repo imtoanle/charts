@@ -6,6 +6,9 @@ on:
       checkoutCommit:
         required: true
         type: string
+      chartChangesDetected:
+        required: true
+        type: string
 
 jobs:
   unit-test:
@@ -13,13 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ inputs.checkoutCommit }}
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.8.0
+        uses: yokawasa/action-setup-kube-tools@v0.8.2
         with:
           setup-tools: |
             helmv3
@@ -53,16 +56,17 @@ jobs:
       detected: ${{ steps.list-changed.outputs.detected }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ inputs.checkoutCommit }}
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.1.0
+        uses: helm/chart-testing-action@v2.3.0
 
       - name: Run chart-testing (list-changed)
         id: list-changed
+        if: inputs.chartChangesDetected == 'true'
         run: |
           EXCLUDED=$(yq eval -o=json '.excluded-charts // []' .github/ct-install.yaml)
           CHARTS=$(ct list-changed --config .github/ct-install.yaml)
@@ -80,29 +84,28 @@ jobs:
     name: Install charts
     strategy:
       matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
-      fail-fast: true
-      max-parallel: 15
+      fail-fast: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ inputs.checkoutCommit }}
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.8.0
+        uses: yokawasa/action-setup-kube-tools@v0.8.2
         with:
           setup-tools: |
             helmv3
           helm: "3.6.3"
 
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.1.0
+        uses: helm/chart-testing-action@v2.3.0
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1

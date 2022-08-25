@@ -1,6 +1,6 @@
 # uptime-kuma
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![AppVersion: v1.11.1](https://img.shields.io/badge/AppVersion-v1.11.1-informational?style=flat-square)
+![Version: 1.4.2](https://img.shields.io/badge/Version-1.4.2-informational?style=flat-square) ![AppVersion: 1.17.1](https://img.shields.io/badge/AppVersion-1.17.1-informational?style=flat-square)
 
 A fancy self-hosted monitoring tool for your websites and applications
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -79,14 +79,14 @@ N/A
 | env.UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN | int | `0` | Set the custom ssl cert path (string) UPTIME_KUMA_SSL_CERT: -- Set the custom ssl key path (string) UPTIME_KUMA_SSL_KEY: -- Set the frame same-origin policy (int) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"louislam/uptime-kuma"` | image repository |
-| image.tag | string | `"1.11.1"` | image tag |
+| image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.1.0
+### Version 1.4.2
 
 #### Added
 
@@ -94,7 +94,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.3.0`.
+* Upgraded `common` chart dependency to version 4.5.2
 
 #### Fixed
 

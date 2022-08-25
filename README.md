@@ -1,6 +1,10 @@
+# ⚠️ Deprecation and Archive Notice
+
+**This repo is being deprecated, please read [this issue](https://github.com/k8s-at-home/charts/issues/1761)**
+
 # Helm charts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-67-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://docs.k8s-at-home.com/)
@@ -122,6 +126,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://taylorvories.com"><img src="https://avatars.githubusercontent.com/u/13934524?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Taylor Vories</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=tvories" title="Code">💻</a></td>
     <td align="center"><a href="http://www.jonathangazeley.com"><img src="https://avatars.githubusercontent.com/u/604595?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=djjudas21" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.b1-systems.de"><img src="https://avatars.githubusercontent.com/u/26167225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Johannes Kastl</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=johanneskastl" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.funkypenguin.co.nz"><img src="https://avatars.githubusercontent.com/u/1524686?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Young</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=funkypenguin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bikram990"><img src="https://avatars.githubusercontent.com/u/6782131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bikramjeet Singh</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=bikram990" title="Code">💻</a></td>
+    <td align="center"><a href="http://geraldwu.com"><img src="https://avatars.githubusercontent.com/u/22160945?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gerald Wu</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=geraldwuhoo" title="Code">💻</a></td>
+    <td align="center"><a href="http://ntrpigo.blogspot.com"><img src="https://avatars.githubusercontent.com/u/720492?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ivan Gregurić Ortolan</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=ntrp" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/lucacalcaterra"><img src="https://avatars.githubusercontent.com/u/879825?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Luca Calcaterra</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=lucacalcaterra" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Omar007"><img src="https://avatars.githubusercontent.com/u/5380079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omar Pakker</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=Omar007" title="Code">💻</a></td>
+    <td align="center"><a href="https://resume.frezbo.dev"><img src="https://avatars.githubusercontent.com/u/18496730?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Noel Georgi</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=frezbo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/lanquarden"><img src="https://avatars.githubusercontent.com/u/446743?v=4?s=100" width="100px;" alt=""/><br /><sub><b>lanquarden</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=lanquarden" title="Code">💻</a></td>
   </tr>
 </table>
 
