@@ -103,6 +103,7 @@ wireguard:
   kernel: false
   # -- max number of networks that Netmaker will support if running with WireGuard enabled
   networkLimit: 10
+  serviceType: NodePort
 
 postgresql-ha:
   postgresql:
