@@ -1,6 +1,6 @@
 # netmaker
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.14.5](https://img.shields.io/badge/AppVersion-0.14.5-informational?style=flat-square)
+![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.14.5](https://img.shields.io/badge/AppVersion-0.14.5-informational?style=flat-square)
 
 A Helm chart to run HA Netmaker on Kubernetes
 
@@ -12,7 +12,7 @@ A Helm chart to run HA Netmaker on Kubernetes
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql-ha | 9.4.4 |
+| https://charts.bitnami.com/bitnami | postgresql-ha | 8.1.5 |
 
 ## TL;DR
 
@@ -112,10 +112,11 @@ N/A
 | wireguard.enabled | bool | `true` | whether or not to use WireGuard on server |
 | wireguard.kernel | bool | `false` | whether or not to use Kernel WG (should be false unless WireGuard is installed on hosts). |
 | wireguard.networkLimit | int | `10` | max number of networks that Netmaker will support if running with WireGuard enabled |
+| wireguard.serviceType | string | `"NodePort"` |  |
 
 ## Changelog
 
-### Version 0.2.2
+### Version 0.2.3
 
 ### Older versions
 
