@@ -50528,6 +50528,21 @@ entries:
   netmaker:
   - apiVersion: v2
     appVersion: 0.14.5
+    created: "2022-09-18T04:31:46.123083893Z"
+    dependencies:
+    - name: postgresql-ha
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.1.5
+    description: A Helm chart to run HA Netmaker on Kubernetes
+    digest: e210f45f53db369fa23cfdd2f9af1d9d4503ef3279c17c899f2949c79fbc1df2
+    icon: https://raw.githubusercontent.com/gravitl/netmaker/master/netclient/windowsdata/resource/netclient.ico
+    name: netmaker
+    type: application
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/netmaker-0.2.4/netmaker-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.14.5
     created: "2022-09-18T03:35:41.094291397Z"
     dependencies:
     - name: postgresql-ha
@@ -108619,4 +108634,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-09-18T03:35:41.114125868Z"
+generated: "2022-09-18T04:31:46.140172828Z"
