@@ -44,7 +44,7 @@ spec:
   {{ $count := (add .Values.wireguard.networkLimit 1 | int) }}
   {{- range untilStep 1 $count 1 }}
   - port: {{ add 31820 . }}
-    {{- if eq .Values.wireguard.serviceType "NodePort" }}
+    {{- if eq $.Values.wireguard.serviceType "NodePort" }}
     nodePort: {{ add 31820 . }}
     {{- end }}
     protocol: UDP
