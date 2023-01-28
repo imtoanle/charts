@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 0.104.2
+description: nocodb helm package
+name: nocodb
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- nocodb
+home: https://github.com/imtoanle/charts/tree/master/charts/stable/nocodb
+icon: https://www.nocodb.com/brand/logo.png
+sources:
+- https://github.com/nocodb/nocodb
+maintainers:
+- name: imtoanle
+  email: toanledev@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
