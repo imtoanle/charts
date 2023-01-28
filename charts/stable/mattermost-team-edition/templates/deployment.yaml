@@ -66,8 +66,8 @@ spec:
         - name: MM_CONFIG
           valueFrom:
             secretKeyRef:
-              name: {{ .Values.externalDB.existingSecrets }}
-              key: db-url
+              name: {{ .Values.externalDB.existingSecrets | default (include "mattermost-team-edition.fullname" .)-mattermost-dbsecret }}
+              key: mattermost.dbsecret
         {{- if .Values.extraEnvVars }}
           {{- .Values.extraEnvVars | toYaml | nindent 8 }}
         {{- end }}
