@@ -39,3 +39,4 @@ persistence:
     enabled: true
     mountPath: /usr/app/data
     accessMode: ReadWriteOnce
+    size: 5Gi
