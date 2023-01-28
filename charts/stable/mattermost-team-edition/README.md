@@ -13,6 +13,7 @@ $ helm install mattermost/mattermost-team-edition \
 
 ## Introduction
 
+
 This chart creates a [Mattermost Team Edition](https://mattermost.com/) deployment on a [Kubernetes](http://kubernetes.io)
 cluster using the [Helm](https://helm.sh) package manager.
 
