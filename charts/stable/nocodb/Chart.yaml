@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 0.104.2
 description: nocodb helm package
 name: nocodb
-version: 0.1.0
+version: 0.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
 - nocodb
@@ -19,5 +19,5 @@ dependencies:
   version: 4.5.2
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+    - kind: changed
+      description: Upgraded chart version to 0.1.1
