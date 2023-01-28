@@ -25,3 +25,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: added
       description: Init
+    - kind: changed
+      description: Update
