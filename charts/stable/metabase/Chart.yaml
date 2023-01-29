@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: v0.45.2.1
+description: Metabase helm package
+name: metabase
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- metabase
+home: https://github.com/imtoanle/charts/tree/master/charts/stable/metabase
+icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+sources:
+- https://github.com/metabase/metabase
+maintainers:
+- name: imtoanle
+  email: toanledev@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
