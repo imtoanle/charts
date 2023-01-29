@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.0.0
+appVersion: v0.45.2.1
 description: Metabase helm package
 name: metabase
-version: 0.45.2.1
+version: 0.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
 - metabase
