@@ -45213,6 +45213,34 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/media-common-openvpn-1.0.0/media-common-openvpn-1.0.0.tgz
     version: 1.0.0
+  metabase:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v0.45.2.1
+    created: "2023-01-29T05:58:00.495766392Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Metabase helm package
+    digest: 59ce813d7f36d1d76fe347cea47a90b5f082ef658a71a80db2c6760bd0907d58
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/metabase
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - metabase
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: metabase
+    sources:
+    - https://github.com/metabase/metabase
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/metabase-0.1.0/metabase-0.1.0.tgz
+    version: 0.1.0
   miniflux:
   - annotations:
       artifacthub.io/changes: |-
@@ -108723,4 +108751,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-01-28T09:41:32.98928487Z"
+generated: "2023-01-29T05:58:00.518231144Z"
