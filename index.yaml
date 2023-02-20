@@ -51318,6 +51318,34 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/network-ups-tools-1.0.0/network-ups-tools-1.0.0.tgz
     version: 1.0.0
+  nexopos:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v4.8.14
+    created: "2023-02-20T08:48:23.637027928Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: NexoPOS helm package
+    digest: 535adbb1c36acd3c8d66650e0653321e91f0b323ed8998a39cdb7bc986213209
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/nexopos
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - nexopos
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: nexopos
+    sources:
+    - https://github.com/Blair2004/NexoPOS
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/nexopos-0.1.0/nexopos-0.1.0.tgz
+    version: 0.1.0
   nginx-php:
   - annotations:
       artifacthub.io/changes: |-
@@ -108751,4 +108779,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-01-29T05:58:00.518231144Z"
+generated: "2023-02-20T08:48:23.662076539Z"
