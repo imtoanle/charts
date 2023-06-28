@@ -40,7 +40,7 @@ persistence:
     subPath: config.yaml
     mountPath: /app
     readOnly: true
-    
+
 config: |
   # github.com/imtoanle/comabase/server Global Configuration
 
