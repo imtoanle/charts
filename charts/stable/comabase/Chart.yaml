@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: Comabase helm package
 name: comabase
-version: 1.0.0
+version: 1.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
 - comabase
@@ -19,5 +19,5 @@ dependencies:
   version: 4.5.2
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+    - kind: changed
+      description: Trigger
