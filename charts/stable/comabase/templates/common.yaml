@@ -10,7 +10,7 @@ persistence:
     type: configMap
     name: {{ printf "%v-config" (include "common.names.fullname" .) }}
     subPath: config.yaml
-    mountPath: /app
+    mountPath: /app/config.yaml
     readOnly: true
   {{- end -}}
 {{- end -}}
