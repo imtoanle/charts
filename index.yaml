@@ -1322,6 +1322,34 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/airsonic-1.0.0/airsonic-1.0.0.tgz
     version: 1.0.0
+  aitbase-admin:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Trigger
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-08-24T07:47:38.898758024Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Aitbase Admin helm package
+    digest: cce1dec23a4fa21e4669576e14ab615fba4eb160b59f3f9a7b3ab75c948ef23b
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/aitbase-admin
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - aitbase-admin
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: aitbase-admin
+    sources:
+    - https://github.com/imtoanle/aitbase-admin
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/aitbase-admin-1.0.1/aitbase-admin-1.0.1.tgz
+    version: 1.0.1
   alertmanager-bot:
   - annotations:
       artifacthub.io/changes: |-
@@ -108807,4 +108835,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-06-29T08:17:11.865416003Z"
+generated: "2023-08-24T07:47:38.918641662Z"
