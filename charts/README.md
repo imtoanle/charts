@@ -4,6 +4,7 @@
 | ----- | ----------- |
 | [adguard-home](stable/adguard-home) | DNS proxy as ad-blocker for local network |
 | [airsonic](stable/airsonic) | Airsonic is a Free and Open Source community driven media server |
+| [aitbase-admin](stable/aitbase-admin) | Aitbase Admin helm package |
 | [alertmanager-bot](stable/alertmanager-bot) | Bot for Prometheus Alertmanager |
 | [alertmanager-discord](stable/alertmanager-discord) | Webhook for Prometheus Alertmanager to listen for notifications and pushes them to Discord channel |
 | [amcrest2mqtt](stable/amcrest2mqtt) | Expose all events from an Amcrest device to an MQTT broker |
