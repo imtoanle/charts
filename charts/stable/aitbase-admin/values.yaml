@@ -9,7 +9,7 @@ hostNetwork: true
 
 image:
   # -- image repository
-  repository: aitbase/aitbase-admin
+  repository: aitbase/aitbase-admin-server
   # -- image tag
   tag: 1.0.0
   # -- image pull policy
