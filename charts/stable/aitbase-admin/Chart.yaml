@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: Aitbase Admin helm package
+name: aitbase-admin
+version: 1.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- aitbase-admin
+home: https://github.com/imtoanle/charts/tree/master/charts/stable/aitbase-admin
+icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+sources:
+- https://github.com/imtoanle/aitbase-admin
+maintainers:
+- name: imtoanle
+  email: toanledev@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Trigger
