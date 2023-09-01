@@ -680,6 +680,34 @@ entries:
     urls:
     - https://github.com/billimek/billimek-charts/releases/download/adguard-home-1.0.0/adguard-home-1.0.0.tgz
     version: 1.0.0
+  aiom:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Trigger
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-01T08:33:14.253712809Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Aitbase Admin helm package
+    digest: 97b935213443b5fca8a14fc6cd4d5b43f5913b29dd638d58f655be8f840251a6
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/aiom
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - aiom
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: aiom
+    sources:
+    - https://github.com/imtoanle/aiom
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/aiom-1.0.1/aiom-1.0.1.tgz
+    version: 1.0.1
   airsonic:
   - annotations:
       artifacthub.io/changes: |-
@@ -108835,4 +108863,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-24T07:47:38.918641662Z"
+generated: "2023-09-01T08:33:14.273957138Z"
