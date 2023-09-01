@@ -3,6 +3,7 @@
 | Chart | Description |
 | ----- | ----------- |
 | [adguard-home](stable/adguard-home) | DNS proxy as ad-blocker for local network |
+| [aiom](stable/aiom) | Aitbase Admin helm package |
 | [airsonic](stable/airsonic) | Airsonic is a Free and Open Source community driven media server |
 | [aitbase-admin](stable/aitbase-admin) | Aitbase Admin helm package |
 | [alertmanager-bot](stable/alertmanager-bot) | Bot for Prometheus Alertmanager |
