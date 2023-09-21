@@ -684,6 +684,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Change hostNetwork
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-21T08:08:59.342307674Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Aitbase Admin helm package
+    digest: 6e270b429cafc107dcb1f413d092ad35dc3385ed0e9f1a29e484c2c897ef7a2c
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/aiom
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - aiom
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: aiom
+    sources:
+    - https://github.com/imtoanle/aiom
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/aiom-1.0.2/aiom-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Trigger
     apiVersion: v2
     appVersion: 1.0.0
@@ -1351,6 +1378,33 @@ entries:
     - https://github.com/k8s-at-home/charts/releases/download/airsonic-1.0.0/airsonic-1.0.0.tgz
     version: 1.0.0
   aitbase-admin:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change hostNetwork
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-21T08:08:59.527096802Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Aitbase Admin helm package
+    digest: e726a81d93539ab537ebabb8e732d1e27ad150ff351dd0f7c6005ef4c9cac175
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/aitbase-admin
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - aitbase-admin
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: aitbase-admin
+    sources:
+    - https://github.com/imtoanle/aitbase-admin
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/aitbase-admin-1.0.2/aitbase-admin-1.0.2.tgz
+    version: 1.0.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -10815,6 +10869,33 @@ entries:
     - https://github.com/k8s-at-home/charts/releases/download/changedetection-io-1.0.0/changedetection-io-1.0.0.tgz
     version: 1.0.0
   comabase:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change hostNetwork
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-21T08:08:59.699936902Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Comabase helm package
+    digest: 706a792e86f029fd70cbe5d0d33941a65bc443a1dd10962d9222fdc537295391
+    home: https://github.com/imtoanle/charts/tree/master/charts/stable/comabase
+    icon: https://pics.freeicons.io/uploads/icons/png/21398484261551941708-512.png
+    keywords:
+    - comabase
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: comabase
+    sources:
+    - https://github.com/imtoanle/comabase
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/comabase-1.0.2/comabase-1.0.2.tgz
+    version: 1.0.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -108863,4 +108944,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-09-01T08:33:14.273957138Z"
+generated: "2023-09-21T08:08:59.717892445Z"
