@@ -13,7 +13,6 @@ $ helm install mattermost/mattermost-team-edition \
 
 ## Introduction
 
-
 This chart creates a [Mattermost Team Edition](https://mattermost.com/) deployment on a [Kubernetes](http://kubernetes.io)
 cluster using the [Helm](https://helm.sh) package manager.
 
@@ -219,6 +218,16 @@ externalDB:
   enabled: true
   externalDriverType: "mysql"
   externalConnectionString: "<USERNAME>:<PASSWORD>@tcp(<HOST>:3306)/<DATABASE_NAME>?charset=utf8mb4,utf8&readTimeout=30s&writeTimeout=30s"
+```
+
+#### Expose extra ports
+To use plugins that require extra ports to be exposed, you can use the following config
+
+```yaml
+extraPorts:
+    - name: plugin-name
+      port: 8585
+      protocol: TCP
 ```
 
 ### Local development
