@@ -13,6 +13,9 @@ icon: http://www.mattermost.org/wp-content/uploads/2016/04/icon.png
 sources:
   - https://github.com/mattermost/mattermost-server
   - https://github.com/mattermost/mattermost-helm
+maintainers:
+  - name: imtoanle
+    email: toanledev@gmail.com
 dependencies:
   - name: mysql
     version: 1.6.4
