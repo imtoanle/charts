@@ -2,8 +2,8 @@ apiVersion: v2
 description: Mattermost Team Edition server.
 type: application
 name: mattermost-team-edition
-version: 6.6.36
-appVersion: 8.1.2
+version: 6.6.40
+appVersion: 9.1.0
 keywords:
   - mattermost
   - communication
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade version mattermost
+      description: Upgrade version mattermost 9.1.0

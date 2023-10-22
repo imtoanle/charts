@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 image:
   repository: mattermost/mattermost-team-edition
-  tag: 8.1.2@sha256:00a95d708b81f57662a04256f8db9926b9b9ea2af1d12c542a9b43516cf55b4b
+  tag: 9.1.0@sha256:9a6427b6da27e25c9280dfe9bca55afe8b06bb50a8417f7ee1ad73e00aefe536
   imagePullPolicy: IfNotPresent
 
 initContainerImage:
@@ -87,6 +87,8 @@ route:
 ## If use this please disable the mysql chart by setting mysql.enable to false
 externalDB:
   enabled: false
+
+  includeConfig: true
 
   ## postgres or mysql
   externalDriverType: ""
@@ -247,3 +249,8 @@ readinessProbe:
   failureThreshold: 3
   timeoutSeconds: 5
   periodSeconds: 10
+
+## Additional annotations for test job
+
+testJob:
+  annotations: {}
