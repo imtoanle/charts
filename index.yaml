@@ -44737,6 +44737,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgrade version mattermost 9.1.0
+    apiVersion: v2
+    appVersion: 9.1.0
+    created: "2023-10-22T15:12:33.304937816Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.helm.sh/stable
+      version: 1.6.4
+    description: Mattermost Team Edition server.
+    digest: 936b3aea3a12ebbdd3b8e425d8ab21e1976d6e361b7e6b08fe7c534af0ef1d5c
+    home: https://mattermost.com
+    icon: http://www.mattermost.org/wp-content/uploads/2016/04/icon.png
+    keywords:
+    - mattermost
+    - communication
+    - team collaboration
+    maintainers:
+    - email: toanledev@gmail.com
+      name: imtoanle
+    name: mattermost-team-edition
+    sources:
+    - https://github.com/mattermost/mattermost-server
+    - https://github.com/mattermost/mattermost-helm
+    type: application
+    urls:
+    - https://github.com/imtoanle/charts/releases/download/mattermost-team-edition-6.6.40/mattermost-team-edition-6.6.40.tgz
+    version: 6.6.40
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade version mattermost
     apiVersion: v2
     appVersion: 8.1.2
@@ -108975,4 +109006,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2023-09-24T08:47:08.284895355Z"
+generated: "2023-10-22T15:12:33.325043506Z"
