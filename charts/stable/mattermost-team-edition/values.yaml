@@ -88,6 +88,8 @@ route:
 externalDB:
   enabled: false
 
+  includeConfig: true
+
   ## postgres or mysql
   externalDriverType: ""
 
